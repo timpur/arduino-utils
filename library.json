@@ -1,0 +1,30 @@
+{
+  "name": "timpur-arduino-utils",
+  "version": "1.0.0",
+  "keywords": "arduino, homie",
+  "description": "",
+  "homepage": "https://github.com/timpur/arduino-utils",
+  "license": "",
+  "authors":
+  {
+    "name": "timpur",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/timpur/arduino-utils.git",
+    "branch": "master"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif8266",
+  "dependencies": [],
+  "export": {
+    "include": [
+      "LICENSE",
+      "keywords.txt",
+      "src/*",
+      "examples/*"
+    ]
+  }
+}
