@@ -1,6 +1,6 @@
 {
   "name": "timpur-arduino-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": "arduino, homie",
   "description": "",
   "homepage": "https://github.com/timpur/arduino-utils",
@@ -18,7 +18,9 @@
   },
   "frameworks": "arduino",
   "platforms": "espressif8266",
-  "dependencies": [],
+  "dependencies": [
+    "tasker"
+  ],
   "export": {
     "include": [
       "LICENSE",

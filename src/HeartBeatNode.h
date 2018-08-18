@@ -10,9 +10,9 @@ public:
 	HeartBeatNode();
 	void setup(Tasker* tasker, int TimeOutPeriod = 1000);
 	bool onHeartBeat(const HomieRange& range, const String& value);
-	void respondHeartBeat(int);
+	void respondHeartBeat();
 
-	static void onHBTimeoutCallback(int val);
+	static void onHBTimeoutCallback();
 private:
 	Tasker * tasker;
 	int timeoutPeriod;
@@ -43,12 +43,12 @@ bool HeartBeatNode::onHeartBeat(const HomieRange& range, const String& value) {
 	return true;
 }
 
-void HeartBeatNode::respondHeartBeat(int) {
+void HeartBeatNode::respondHeartBeat() {
 	heartbeatNode.setProperty("value").overwriteSetter(true).send(String(false));
 }
 
-void HeartBeatNode::onHBTimeoutCallback(int val) {
-	HeartBeat.respondHeartBeat(val);
+void HeartBeatNode::onHBTimeoutCallback() {
+	HeartBeat.respondHeartBeat();
 }
 
 #endif

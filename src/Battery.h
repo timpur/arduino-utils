@@ -28,7 +28,7 @@ class BatteryManager{
 		ProtectionCallback callback;
 		
 		void check();
-		static void check_static(int);
+		static void check_static();
 };
 extern BatteryManager Battery;
 BatteryManager Battery;
@@ -114,6 +114,6 @@ void BatteryManager::check(){
 }
 
 
-void BatteryManager::check_static(int){
+void BatteryManager::check_static(){
 	Battery.check();
 }
